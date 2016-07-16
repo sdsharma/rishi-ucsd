@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="The UCSD chapter of Project RISHI Team" />
+    <meta name="author" content="UCSD Project RISHI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#159238">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>UCSD Project Rishi</title>
+    <!--  Bootstrap Style -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- <link href="../voice/css/clean-blog.min.css" rel="stylesheet"> -->
+    <!--  Font-Awesome Style -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--  Animation Style -->
+    <link href="../assets/css/animate.css" rel="stylesheet" />
+    <!--  Pretty Photo Style -->
+    <link href="../assets/css/prettyPhoto.css" rel="stylesheet" />
+    <!--  Google Font Style -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!--  Custom Style -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="../favicon.png" type="image/png"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <style type="text/css">
+    @media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+ @media (min-width: 1200px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+.nav .dropdown-menu {
+    margin-top: 0;
+}
+}
+    </style>
+  </head>
+  <body >
+    <div class="navbar navbar-default navbar-fixed-top move-me ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="../">
+                    <img src="../assets/img/logo.png" class="navbar-brand-logo " alt="" />
+
+                </a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+
+                   <li class="dropdown">
+                        <!-- <a href="?about">ABOUT
+                        </a> -->
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">ABOUT <b class="caret"></b></a>
+                        <ul class = "dropdown-menu" style = "padding-left: 15px; padding-right: 15px; min-width: 165px; background-color: #242222;">
+                            <span style = "color: #fff;">
+                            <li><a href="../?about" style="color: #fff;">Projects and Awards</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../team/" style="color: #fff;">Our Team</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../?contact" style="color: #fff;">Contact Us</a></li>
+                            </span>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">FUNDRAISING & SPONSORS <b class="caret"></b></a>
+                        <ul class = "dropdown-menu" style = "padding-left: 15px; padding-right: 15px; min-width: 215px; background-color: #242222;">
+                            <span style = "color: #fff;">
+                            <li><a href="../sponsor/" style="color: #fff;">Sponsorship</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../run/" style="color: #fff;">5k Charity Run</a></li>
+                            </span>
+                        </ul>
+                    </li>
+
+                    <li >
+                        <a href="../?gallery">GALLERY
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="../?help">HOW TO HELP
+                        </a>
+
+                    </li>
+                    <li >
+                        <a href="../voice/">BLOG
+                        </a>
+
+                    </li>
+                    <li >
+                        <a href="../calendar/">CALENDAR
+                        </a>
+
+                    </li>
+                    <li>
+                    <a href = "../member/">MEMBER OF THE MONTH</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+<div class="container" ng-app="myApp" ng-controller="Main"> 
+<br />
+<br />
+<br />
+<br />
+  <div class="row" id="userList">
+    <div ng-repeat="u in users" class="col-xs-4 col-sm-2">
+      <a href="" ng-click="showUserModal($index)"><img src="{{u.user.picture.large}}" class="img-thumbnail img-responsive img-circle"></a>
+      <h3 class="text-center">{{u.user.name.first}}</h3>
+      <hr>
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header bg-info">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 id="myModalLabel" class="text-center"></h1>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+          	<div class="row">
+            	<div class="col-xs-4 col-xs-offset-4"><img src="{{currUser.picture.large}}" class="img-thumbnail img-responsive img-circle"></div>
+            </div>
+            <hr>
+            <div class="row">
+            	<h4 class="text-center"><i class="fa fa-fw fa-users fa-2x"></i> {{currUser.cell}}</h4>
+              <h4 class="text-center"><i class="fa fa-fw fa-user fa-2x"></i> {{currUser.username}}</h4>
+              <h4 class="text-center"><i class="fa fa-fw fa-bookmark-o fa-2x"></i> <a href = "{{currUser.email}}">{{currUser.email}}</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-info">
+            <button class="btn btn-lg btn-default center-block" data-dismiss="modal" aria-hidden="true">Okay!</button>
+        </div>
+    </div>
+    </div>
+  </div><!--/modal-->
+  
+</div><!--/container-->
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/projectrishiUCSD">  <img src="http://acsweb.ucsd.edu/~shs052/RISHI/assets/img/Social/facebook.png" alt="" /> </a>
+                     
+                     
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/SDProjectRishi"> <img src="http://acsweb.ucsd.edu/~shs052/RISHI/assets/img/Social/twitter.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/ucsdprojectrishi"> <img src="http://acsweb.ucsd.edu/~shs052/RISHI/assets/img/Social/flickr.png" alt="" /></a>
+                        </li>
+                    </ul>
+                    <center>
+                    <p class="copyright text-muted">&copy; 2015 UCSD Project RISHI | by <a href="http://www.shivam.info/" target="_blank" >Shivam Sharma</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--scripts loaded here-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

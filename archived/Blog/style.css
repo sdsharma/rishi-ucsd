@@ -1,0 +1,57 @@
+/*** Reset ***/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;text-align:left;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+:focus {outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/*** Main ***/
+
+body {font: 62.5% Georgia, Geneva, "Times New Roman", times; background: #000}
+.clear:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.left {float: left;}
+.right {float: right;}
+
+.wrapper {width: 975px; background: #fff; margin: 0 auto;}
+#container {padding: 30px 0 45px;}
+
+
+/*** Header ***/
+
+.header {height: 230px; overflow: hidden; padding-right: 30px;border-bottom: 6px solid #d9d9d9;}
+
+/*** Navigation ***/
+
+.nav {border-top: 6px solid #d9d9d9;}
+
+/*** Content ***/
+
+#content {width: 610px; float: left; padding: 0 0 0 30px;}
+
+.content-title {color: #000; font-size: 18px; padding: 0 0 15px 0px; border-bottom: 6px solid #d9d9d9; position: relative;}
+.content-title a {color: #000; text-decoration: none;}
+.content-title a:hover {text-decoration: underline;}
+.content-title span {color: #d9d9d9;}
+.content-title span a {color: #d9d9d9; text-decoration: none;}
+.content-title span a:hover {color: #000; text-decoration: none;}
+#mode {display: block; width: 37px; height: 14px; background: url("images/mode.png") 0 0 no-repeat; position: absolute; bottom: 14px; right: 0;}
+.flip {background-position: 0 100% !important;}
+
+.list .post {padding: 30px 0 0 0px; border-bottom: 1px solid #d9d9d9;}
+.list .post .thumb img {float: left; margin: 0 30px 30px 0; width: 290px; height: 290px;}
+.list .post a {color: #000;}
+.list .post .post-category {font-size: 11px; color: #d9d9d9; text-transform: uppercase; margin-bottom: 11px;}
+.list .post .post-category a {text-decoration: none;}
+.list .post .post-category a:hover {text-decoration: underline;}
+.list .post h2 {margin-bottom: 8px;}
+.list .post h2, .list .post h2 a {color: #444242; font-size: 26px; font-weight: normal; text-decoration: none;}
+.list .post h2 a:hover {text-decoration: underline;}
+.list .post .post-meta {font-size: 13px; font-style: italic; color: #aaa9a9; margin-bottom: 20px;}
+.list .post .post-meta span, .list .post .post-meta a {font-size: 13px; color: #000; text-decoration: none; font-family: Verdana, Helvetica, Arial, sans-serif; font-style: normal;}
+.list .post .post-meta a:hover {text-decoration: underline;}
+.post-author {text-transform: uppercase;}

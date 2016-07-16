@@ -1,0 +1,32 @@
+<div class="main-container">
+  <header>
+    <h1><a href="index.html"><img src="images/PRlogo.png" width = "180" height = "135" align = "left" /><img src="images/PRlogo2.jpg" width = "180" height = "135" align = "right"/>UCSD Project Rishi</a></h1>
+    <p id="tagline"><strong><i>"Committed to improving healthcare and education in rural India"</i></strong></p>
+  </header>
+</div>
+<div class="main-container">
+  <div id="sub-headline">
+    <div class="tagline_left"><p id="tagline2">A chapter of a 501-3(c) non-profit organization based at the University of California, San Diego  *Contact us: <a href="projectrishi@ucsd.edu">projectrishi@ucsd.edu</a></p></div>
+    <div class="tagline_right">
+      
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<div class="main-container">
+  <div id="nav-container">
+   <nav> 
+    <ul class="nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href = "#">About</a></li>
+      <li><a href="#">Fundraising</a></li>
+      <li><a href="#">Calendar</a>
+      </li>
+          <li><a href="#">Leadership</a></li>
+		  <li><a href="#">Useful Documents</a></li>
+      <li class="last"><a href="#">Gallery</a></li>
+    </ul>
+   </nav> 
+    <div class="clear"></div>
+  </div>
+</div>

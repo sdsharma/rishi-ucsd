@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The UCSD chapter of Project RISHI Calendar" />
+    <meta name="author" content="UCSD Project RISHI" />
+    <meta name="theme-color" content="#159238">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>UCSD Project RISHI</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../voice/css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="../favicon.png" type="image/png"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <link href='./fullcalendar.css' rel='stylesheet' />
+        <script src='./lib/jquery.min.js'></script> 
+    <link href='./fullcalendar.print.css' rel='stylesheet' media='print' /> 
+    <script src='./lib/moment.min.js'></script>
+    <script src='./fullcalendar.min.js'></script>
+    <script src='./gcal.js'></script>
+    <script>
+
+    $(document).ready(function() {
+    
+        $('#calendar').fullCalendar({
+            googleCalendarApiKey: 'AIzaSyBcJlJ5oEzn0xjsQGZ7hubcSuVYWKr7xkw',
+        
+            events: 'ucsdprojectrishi@gmail.com',
+            
+            eventClick: function(event) {
+                // opens events in a popup window
+                window.open(event.url, 'gcalevent', 'width=700,height=600');
+                return false;
+            },
+            
+    loading: function(bool) {
+        $('#loading').toggle(bool);
+    }
+            
+        });
+        
+    });
+
+</script>
+<style>        
+    #loading {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #calendar {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+<style type="text/css">
+    @media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+ @media (min-width: 1200px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+.nav .dropdown-menu {
+    margin-top: 0;
+}
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top move-me">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="../#">
+                    <img src="../assets/img/logo.png" class="navbar-brand-logo " alt="" />
+
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+                        <!-- <a href="?about">ABOUT
+                        </a> -->
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">ABOUT <b class="caret"></b></a>
+                        <ul class = "dropdown-menu" style = "padding-left: 15px; padding-right: 15px; min-width: 165px; background-color: #242222;">
+                            <span style = "color: #fff;">
+                            <li><a href="../?about" style="color: #fff;">Projects and Awards</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../team/" style="color: #fff;">Our Team</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../?contact" style="color: #fff;">Contact Us</a></li>
+                            </span>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">FUNDRAISING & SPONSORS <b class="caret"></b></a>
+                        <ul class = "dropdown-menu" style = "padding-left: 15px; padding-right: 15px; min-width: 215px; background-color: #242222;">
+                            <span style = "color: #fff;">
+                            <li><a href="../sponsor/" style="color: #fff;">Sponsorship</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../run/" style="color: #fff;">5k Charity Run</a></li>
+                            </span>
+                        </ul>
+                    </li>
+
+                    <li >
+                        <a href="../?gallery">GALLERY
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="../?help">HOW TO HELP
+                        </a>
+
+                    </li>
+                    <li >
+                        <a href="../voice/">BLOG
+                        </a>
+
+                    </li>
+                    <li >
+                        <a href="../calendar/">CALENDAR
+                        </a>
+
+                    </li>
+                    <li>
+                    <a href = "../member/">MEMBER OF THE MONTH</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+
+    <!-- Post Content -->
+    <article>
+        <br />
+        <br />
+        <br />
+        <center><div id='calendar'></div></center>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/projectrishiUCSD">  <img src="../assets/img/Social/facebook.png" alt="" /> </a>
+                     
+                     
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/SDProjectRishi"> <img src="../assets/img/Social/twitter.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.flickr.com/photos/ucsdprojectrishi"> <img src="../assets/img/Social/flickr.png" alt="" /></a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">&copy; 2015 UCSD Project RISHI | by <a href="http://www.shivam.info/" target="_blank" >Shivam Sharma</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../voice/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../voice/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
