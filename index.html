@@ -1,21 +1,3 @@
-<?php
-    if (isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $from = 'Website Contact Form'; 
-        $to = 'ucsdprojectrishi@gmail.com'; 
-        $subject = 'Message from Contact Form ';
-        
-        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
- 
- 
-// If there are no errors, send the email
-     mail ($to, $subject, $body, $from);
-
- }
-    	?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,8 +100,6 @@
             <div class="navbar-collapse collapse move-me">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <!-- <a href="?about">ABOUT
-                        </a> -->
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">ABOUT <b class="caret"></b></a>
                         <ul class = "dropdown-menu" style = "padding-left: 15px; padding-right: 15px; min-width: 165px; background-color: #242222;">
                             <span style = "color: #fff;">
@@ -320,35 +300,10 @@ UCSD Project RISHI students have also attended the prestigious Clinton Global In
                         <div id="testimonials" class="carousel slide" data-ride="carousel">
 
                             <ol class="carousel-indicators">
-                                <!-- <li data-target="#testimonials" data-slide-to="0" class=""></li>
-                                <li data-target="#testimonials" data-slide-to="1" class=""></li> -->
                                 <li data-target="#testimonials" data-slide-to="2" class="active"></li>
                             </ol>
 
                             <div class="carousel-inner">
-                                <!-- <div class="item">
-                                    <div class="container center">
-                                        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
-
-                                            <h4><i class="fa fa-quote-left"></i>I'm Shivani Patel and am from Bakersfield, CA. I'm currently a sophomore at UCSD and this is my second year being a part of Project Rishi! I'm a human biology major in Revelle College and hope to have a career in the medical field some day. In my free time I love to dance and read. I'm also slightly a shopaholic and it’s a serious problem! <i class="fa fa-quote-right"></i></h4>
-                                            <div class="user-img pull-right">
-                                                <img src="assets/img/Shivani.jpg" alt="" class="img-circle image-responsive">
-                                            </div>
-                                            <h5 class="pull-right"><strong class="c-black">Shivani Patel - VP</strong></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="container center">
-                                        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
-                                            <h4><i class="fa fa-quote-left"></i>I'm Shivani Patel and am from Bakersfield, CA. I'm currently a sophomore at UCSD and this is my second year being a part of Project Rishi! I'm a human biology major in Revelle College and hope to have a career in the medical field some day. In my free time I love to dance and read. I'm also slightly a shopaholic and it’s a serious problem!<i class="fa fa-quote-right"></i></h4>
-                                            <div class="user-img pull-right">
-                                                <img src="assets/img/Shivani.jpg" alt="" class="img-circle image-responsive">
-                                            </div>
-                                            <h5 class="pull-right"><strong class="c-black">Shivani Patel - VP</strong></h5>
-                                        </div>
-                                    </div>
-                                </div> -->
                                 <div class="item active">
                                     <div class="container center">
                                         <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
@@ -463,15 +418,15 @@ UCSD Project RISHI students have also attended the prestigious Clinton Global In
                 </div>
             <div class="row pad-top-botm">
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <form action = "index.php" method="POST">
+                    <form>
                         <div class="form-group">
-                            <input id = "name" name = "name" type="text" class="form-control"  required="required" placeholder="Your Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                            <input id = "name" name = "name" type="text" class="form-control"  required="required" placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <input id = "email" name = "email" email = "email" type="text" class="form-control" required="required"  placeholder="Your Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                            <input id = "email" name = "email" email = "email" type="text" class="form-control" required="required"  placeholder="Your Email">
                         </div>
                         <div class="form-group">
-                            <textarea name="message"  required="required" class="form-control" style="min-height: 150px;" placeholder="Message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                            <textarea name="message"  required="required" class="form-control" style="min-height: 150px;" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
                             <button id ="submit" name = "submit" value="Send" type="submit" class="btn btn-success btn-block btn-lg">SUBMIT REQUEST</button>
